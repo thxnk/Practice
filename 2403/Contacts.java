@@ -1,26 +1,17 @@
-public class BookOfContacts {
+public class Contacts {
 
     private int id;
     private String firstName;
     private String lastName;
     private String adress;
 
-    public BookOfContacts(String firstName, String lastName, String adress) {
+    public Contacts(String firstName, String lastName, String adress) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.adress = adress;
     }
 
-    public BookOfContacts(String firstName, String lastName){
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-
-    public BookOfContacts(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public BookOfContacts() {
+    public Contacts() {
         this.firstName = "None";
         this.lastName = "None";
         this.adress = "None";
