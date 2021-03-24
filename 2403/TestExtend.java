@@ -1,18 +1,16 @@
 public class TestExtend {
     public static void main(String[] args) {
-            BookOfContacts book = new BookOfContacts("Dima","Prokop","Ostrovskoho 11");
-            book.setId(1);
-            System.out.println("\n"+book+"\n");
+            Contacts contact = new Contacts("Dima","Prokop","Ostrovskoho 11");
+            contact.setId(1);
+            System.out.println("\n"+contact+"\n");
 
-            Order order = new Order(4,"Pizza","Petrenko");
-            order.setDateTime("23.03.2021, 12:30");
-            order.setType(2);
-            System.out.println(order+"\n");
+            President president = new President("Vova", "Zelenský", "Chrešt'atik", "Ukraine", 115, "Ze");
+            president.setId(6);
+            System.out.println(president);
 
-            Students students = new Students(123124,"Grudin", "Sergiy", "34", "121");
-            students.setDiscipline("OOP");
-            students.setMark(4.92);
-            students.setTeacherName("Babich");
-            System.out.println(students);
+            Employee employee = new Employee("Gleb","GUsak","Sinna 4", "Intel", "Designer", 543857.4);
+            employee.setId(2);
+            System.out.println(employee);
+
     }
 }
