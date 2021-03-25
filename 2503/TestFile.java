@@ -26,7 +26,7 @@ public class TestFile {
         sc.close();
 
         try {
-            FileOutputStream fos = new FileOutputStream("WriteObject.bin");
+            FileOutputStream fos = new FileOutputStream("2503/WriteObject.bin");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
 
             oos.writeObject(contacts);
