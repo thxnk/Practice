@@ -1,4 +1,4 @@
-public class Employee extends Contacts{
+public class Employee extends Contacts {
     private String company;
     private String position;
     private double salary;
@@ -11,22 +11,27 @@ public class Employee extends Contacts{
     }
 
     public String getCompany() {
+
         return company;
     }
 
     public void setCompany(String company) {
+
         this.company = company;
     }
 
     public String getPosition() {
+
         return position;
     }
 
     public void setPosition(String position) {
+
         this.position = position;
     }
 
     public double getSalary() {
+
         return salary;
     }
 
