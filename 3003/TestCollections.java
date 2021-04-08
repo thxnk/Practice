@@ -1,6 +1,5 @@
 import Classes.ContColl;
 import Classes.EmployCont;
-import Classes.Presid;
 import Classes.PresidColl;
 
 import java.io.IOException;
