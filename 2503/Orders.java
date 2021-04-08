@@ -1,6 +1,10 @@
 import java.io.Serializable;
 import java.util.Scanner;
 
+
+/**
+ * The class Orders implements serializable
+ */
 public class Orders implements Serializable {
     private int id;
     private String name;
@@ -9,48 +13,59 @@ public class Orders implements Serializable {
     private int type;
 
     public Orders(int id, String name, String courier) {
+
         this.id = id;
         this.name = name;
         this.courier = courier;
     }
 
     public int getId() {
+
         return id;
     }
 
     public void setId(int id) {
+
         this.id = id;
     }
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public String getCourier() {
+
         return courier;
     }
 
     public void setCourier(String courier) {
+
         this.courier = courier;
     }
 
     public String getDateTime() {
+
         return dateTime;
     }
 
     public void setDateTime(String dateTime) {
+
         this.dateTime = dateTime;
     }
 
     public int getType() {
+
         return type;
     }
 
     public void setType(int type) {
+
         if(type == 1  || type == 2) {
             this.type = type;
         }else {
@@ -62,6 +77,7 @@ public class Orders implements Serializable {
 
     @Override
     public String toString(){
+
         return "Id of order: "+id+", name of order: "+name+", courier: "+courier+", date: "+dateTime+", type:"+type;
     }
 }

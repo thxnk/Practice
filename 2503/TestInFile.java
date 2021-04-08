@@ -3,8 +3,10 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.Scanner;
 
-public class TestFile {
+public class TestInFile {
+
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter: name, lastName, adress, and id");
         BContacts contacts = new BContacts(sc.nextLine(),sc.nextLine(),sc.nextLine());
