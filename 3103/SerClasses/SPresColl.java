@@ -1,9 +1,6 @@
 package SerClasses;
 
-import Classes.Presid;
 import SerSortingClasses.SSortLast;
-import SortingClasses.SortLast;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -16,7 +13,7 @@ public class SPresColl implements Serializable {
 
             Scanner scanner = new Scanner(System.in);
 
-            System.out.println("Enter firstname, lastname, address, country, days, party");
+            System.out.println("Введіть ім'я, прізвище, адресу, країну, дні правління, партію");
             SPresid presidents = new SPresid(scanner.nextLine(),
                     scanner.nextLine(),
                     scanner.nextLine(),
@@ -33,7 +30,7 @@ public class SPresColl implements Serializable {
 
         @Override
         public String toString() {
-            String text = new String("President collection :\n");
+            String text = new String("Колекція президентів :\n");
             for(SPresid cnt : pCol){
                 text+=cnt.toString()+"\n";
             }

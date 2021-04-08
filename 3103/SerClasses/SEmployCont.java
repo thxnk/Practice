@@ -14,7 +14,7 @@ public class SEmployCont implements Serializable {
 
             Scanner scanner = new Scanner(System.in);
 
-            System.out.println("Enter firstname, lastname, address, company, position, salary");
+            System.out.println("Введіть ім'я, призвище, адресу, компанію, позицію, заробітну плату");
             SEmploy employer = new SEmploy(scanner.nextLine(),
                     scanner.nextLine(),
                     scanner.nextLine(),
@@ -31,7 +31,7 @@ public class SEmployCont implements Serializable {
 
         @Override
         public String toString() {
-            String text = new String("Employer collection :\n");
+            String text = new String("Колекція робітників:\n");
             for(SEmploy cnt : eCol){
                 text+=cnt.toString()+"\n";
             }

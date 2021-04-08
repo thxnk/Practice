@@ -45,11 +45,14 @@ public class SPresid extends SCont implements Serializable {
 
         @Override
         public String toString() {
-            return "Presidents " +
-                    "country='" + country + '\'' +
-                    ", daysOfBeingInRule=" + daysOfBeingInRule +
-                    ", nameOfParty='" + nameOfParty + '\''
-                    +" " + super.toString();
+            return "Інформація про президента: " +
+                    "країна = " + country +
+                    ", дні при владі = " + daysOfBeingInRule +
+                    ", партія = " + nameOfParty +
+                    ", Id = " + super.getId() +
+                    ", ім'я = " + super.getFirstName() +
+                    ", фамілія = " + super.getLastName() +
+                    ", адреса = " + super.getAdress();
         }
     }
 

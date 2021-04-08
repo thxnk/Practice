@@ -14,7 +14,7 @@ public class SContColl implements Serializable {
 
             Scanner scanner = new Scanner(System.in);
 
-            System.out.println("Enter id, firstname, lastname, address");
+            System.out.println("Введіть id, ім'я, прізвище, адресу");
             SCont contact = new SCont(Integer.parseInt(scanner.nextLine()),
                     scanner.nextLine(),
                     scanner.nextLine(),
@@ -33,7 +33,7 @@ public class SContColl implements Serializable {
 
         @Override
         public String toString() {
-            String text = new String("Contact collection :\n");
+            String text = new String("Колекція контактів:\n");
             for(SCont cnt : cCol){
                 text+=cnt.toString()+"\n";
             }

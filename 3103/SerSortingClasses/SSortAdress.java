@@ -9,5 +9,4 @@ public class SSortAdress implements Comparator<SEmploy>{
         public int compare(SEmploy contact, SEmploy contact2) {
             return contact.getAdress().compareTo(contact2.getAdress());
         }
-
 }

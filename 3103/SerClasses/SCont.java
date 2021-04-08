@@ -55,11 +55,10 @@ public class SCont implements Serializable {
 
         @Override
         public String toString() {
-            return "Contact{" +
-                    "id=" + id +
-                    ", firstName='" + firstName + '\'' +
-                    ", lastName='" + lastName + '\'' +
-                    ", adress='" + adress + '\'' +
-                    '}';
+            return "Інформація про контакт: " +
+                    "Id = " + id +
+                    ", ім'я = " + firstName +
+                    ", фамілія = " + lastName +
+                    ", адреса = " + adress;
         }
     }

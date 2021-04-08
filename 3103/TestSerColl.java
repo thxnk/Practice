@@ -15,20 +15,20 @@ public class TestSerColl implements Serializable{
         int choice;
         int choiceCol;
         while(end == 0) {
-            System.out.println("Choose:\n" +
-                    "1 - add a col\n" +
-                    "2 - sort a col\n" +
-                    "3 - display all collections\n" +
-                    "4 - write to a file\n" +
-                    "5 - get from file\n" +
-                    "0 - end run");
+            System.out.println("Введіть цифру:\n" +
+                    "1 - додати до колекції\n" +
+                    "2 - сортурувати колекцію\n" +
+                    "3 - вивести колекції на екран\n" +
+                    "4 - записати до файлу\n" +
+                    "5 - дістати з файлу\n" +
+                    "0 - вихід з програми");
             choice = sc.nextInt();
             switch (choice){
                 case 1:
-                    System.out.println("Choice a coll\n" +
-                            "1 - Contact\n" +
-                            "2 - Employ\n" +
-                            "3 - President");
+                    System.out.println("Виберіть колекцію\n" +
+                            "1 - Контакти\n" +
+                            "2 - Робітники\n" +
+                            "3 - Президенти");
                     choiceCol = sc.nextInt();
                     if(choiceCol == 1){
                         cCol.addC();
@@ -42,10 +42,10 @@ public class TestSerColl implements Serializable{
                     else System.out.println("Wrong enter");
                     break;
                 case 2:
-                    System.out.println("Choice a coll to sort\n" +
-                            "1 - Contact\n" +
-                            "2 - Employ\n" +
-                            "3 - President");
+                    System.out.println("Виберіть колекцію для відсортування\n" +
+                            "1 - Контакти\n" +
+                            "2 - Робітники\n" +
+                            "3 - Президенти");
                     choiceCol = sc.nextInt();
                     if(choiceCol == 1){
                         cCol.sortFirstName();
@@ -84,19 +84,16 @@ public class TestSerColl implements Serializable{
                         FileInputStream fis = new FileInputStream("WriteObject.bin");
                         ObjectInputStream ois = new ObjectInputStream(fis);
 
-                        SContColl contColl = (SContColl) ois.readObject();
-                        SEmployCont employCont1 = (SEmployCont) ois.readObject();
-                        SPresColl sPresColl = (SPresColl) ois.readObject();
-                        System.out.println(contColl);
-                        System.out.println(employCont1);
-                        System.out.println(sPresColl);
+                        cCol = (SContColl) ois.readObject();
+                        eCol = (SEmployCont) ois.readObject();
+                        pCol = (SPresColl) ois.readObject();
                         ois.close();
                     } catch (IOException | ClassNotFoundException e) {
                         e.printStackTrace();
                     }
                     break;
                 case 0:
-                    System.out.println("End");
+                    System.out.println("Вихожу....");
                     end = 1;
                     break;
                 default:

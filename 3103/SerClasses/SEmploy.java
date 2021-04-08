@@ -1,7 +1,5 @@
 package SerClasses;
 
-import Classes.Cont;
-
 import java.io.Serializable;
 
 public class SEmploy extends SCont implements Serializable {
@@ -47,10 +45,14 @@ public class SEmploy extends SCont implements Serializable {
 
         @Override
         public String toString() {
-            return "Employer " +
-                    "company='" + company + '\'' +
-                    ", position='" + position + '\'' +
-                    ", salary=" + salary + " " + super.toString();
+            return "Інформація про робітника: " +
+                    "компанія = " + company +
+                    ", позиція = " + position  +
+                    ", заробітна плата = " + salary +
+                    ", Id = " + super.getId() +
+                    ", ім'я = " + super.getFirstName() +
+                    ", фамілія = " + super.getLastName() +
+                    ", адреса = " + super.getAdress();
         }
     }
 
